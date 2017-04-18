@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
-    "name": "react-native-root-toast-ts",
-    "description": "react native toast like component, pure javascript solution typescript",
+    "name": "react-native-root-toast-ct",
+    "description": "react native toast like component, pure javascript solution custom msg text=>react component",
     "repository": {
         "type": "git",
         "url": "https://github.com/angrycans/react-native-root-toast-ts"
@@ -16,6 +16,6 @@
         "typescript"
     ],
     "dependencies": {
-        "react-native-root-siblings": "^1.0.7"
+        "react-native-root-siblings": "^1.1.3"
     }
 }

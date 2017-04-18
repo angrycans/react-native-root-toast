@@ -3,13 +3,12 @@
 -----------------------
 
 #### Features
-1. typescript.
-2. message support text and react component
+1. message support text and react component
 
 
 ### Install
 
-`npm install react-native-root-toast-ts`
+`npm install react-native-root-toast-ct`
 
 
 ### Settings
