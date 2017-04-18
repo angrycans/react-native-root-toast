@@ -14,6 +14,10 @@
 ### Settings
 
 ```
+Toast.show("hello world", { position: Toast.positions.CENTER });
+
+or 
+
 const msg = (
   <View><Text style={{ color: "red" }}>
     hello
@@ -25,5 +29,6 @@ const msg = (
 );
 
 Toast.show(msg, { position: Toast.positions.CENTER });
+
 
 ```

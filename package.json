@@ -4,7 +4,7 @@
   "description": "react native toast like component, pure javascript solution custom msg text=>react component",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angrycans/react-native-root-toast-ts.git"
+    "url": "git+https://github.com/angrycans/react-native-root-toast-ct.git"
   },
   "license": "MIT",
   "main": "./index.js",
@@ -19,11 +19,6 @@
     "react-native-root-siblings": "^1.1.3"
   },
   "bugs": {
-    "url": "https://github.com/angrycans/react-native-root-toast-ts/issues"
-  },
-  "homepage": "https://github.com/angrycans/react-native-root-toast-ts#readme",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": ""
+    "url": "https://github.com/angrycans/react-native-root-toast-ct/issues"
+  }
 }
