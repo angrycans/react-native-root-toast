@@ -1,21 +1,29 @@
 {
-    "version": "1.0.0",
-    "name": "react-native-root-toast-ct",
-    "description": "react native toast like component, pure javascript solution custom msg text=>react component",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/angrycans/react-native-root-toast-ts"
-    },
-    "license": "MIT",
-    "main": "./index.js",
-    "keywords": [
-        "react-component",
-        "react-native",
-        "ios",
-        "android",
-        "typescript"
-    ],
-    "dependencies": {
-        "react-native-root-siblings": "^1.1.3"
-    }
+  "version": "1.0.0",
+  "name": "react-native-root-toast-ct",
+  "description": "react native toast like component, pure javascript solution custom msg text=>react component",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angrycans/react-native-root-toast-ts.git"
+  },
+  "license": "MIT",
+  "main": "./index.js",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "typescript"
+  ],
+  "dependencies": {
+    "react-native-root-siblings": "^1.1.3"
+  },
+  "bugs": {
+    "url": "https://github.com/angrycans/react-native-root-toast-ts/issues"
+  },
+  "homepage": "https://github.com/angrycans/react-native-root-toast-ts#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
 }
