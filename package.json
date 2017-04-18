@@ -1,10 +1,10 @@
 {
-    "version": "1.0.3",
-    "name": "react-native-root-toast",
-    "description": "react native toast like component, pure javascript solution",
+    "version": "1.0.0",
+    "name": "react-native-root-toast-ts",
+    "description": "react native toast like component, pure javascript solution typescript",
     "repository": {
         "type": "git",
-        "url": "https://github.com/magicismight/react-native-root-toast"
+        "url": "https://github.com/angrycans/react-native-root-toast-ts"
     },
     "license": "MIT",
     "main": "./index.js",
@@ -13,9 +13,7 @@
         "react-native",
         "ios",
         "android",
-        "image",
-        "video",
-        "focus"
+        "typescript"
     ],
     "dependencies": {
         "react-native-root-siblings": "^1.0.7"

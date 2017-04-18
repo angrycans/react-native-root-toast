@@ -1,18 +1,15 @@
-### react-native-root-toast
+### fork react-native-root-toast https://github.com/magicismight/react-native-root-toast
 
 -----------------------
 
 #### Features
-1. Pure javascript solution.
-2. Support both Android and iOS.
-3. Lots of custom options for Toast.
-4. You can show/hide Toast by calling api or using Component inside render.
+1. typescript.
+2. message support text and react component
 
-![screen-shoots](./Example/screen-shoots.gif)
 
 ### Install
 
-`npm install react-native-root-toast`
+`npm install react-native-root-toast-ts`
 
 
 ### Settings
@@ -31,108 +28,3 @@ onHide              | null                     | Function | Callback for toast\`
 onHidden            | null                     | Function | Callback for toast\`s hide animation end
 
 
-### Properties
-
-##### Toast.durations
-
-presets of duration of the toast.
-
-1. Toast.durations.SHORT (equals to *2000*)
-
-2. Toast.durations.LONG (equals to *3500*)
-
-##### Toast.positions
-
-presets of position of toast.
-
-1. Toast.positions.TOP (equals to *20*)
-
-2. Toast.positions.BOTTOM (equals to *-20*)
-
-3. Toast.positions.CENTER (equals to *0*)
-
-### Usage
-
-There are two different ways to manage a Toast.
-
-##### **Calling api**
-
-```
-import Toast from 'react-native-root-toast';
-
-
-// Add a Toast on screen.
-let toast = Toast.show('This is a message', {
-    duration: Toast.durations.LONG,
-    position: Toast.positions.BOTTOM,
-    shadow: true,
-    animation: true,
-    hideOnPress: true,
-    delay: 0,
-    onShow: () => {
-        // calls on toast\`s appear animation start
-    },
-    onShown: () => {
-        // calls on toast\`s appear animation end.
-    },
-    onHide: () => {
-        // calls on toast\`s hide animation start.
-    },
-    onHidden: () => {
-        // calls on toast\`s hide animation end.
-    }
-});
-
-// You can manually hide the Toast, or it will automatically disappear after a `duration` ms timeout.
-setTimeout(function () {
-    Toast.hide(toast);
-}, 500);
-
-```
-
-##### **Using a Component**
-
-**NOTE:**
-Showing a toast by using a Component inside render, The toast will be automatically disappeared when the `<Toast />` is unmounted.
-
-```
-import React, {Component} from 'react-native';
-import Toast from 'react-native-root-toast';
-
-class Example extends Component{
-    constructor() {
-        super(...arguments);
-        this.state = {
-            visible: false
-        };
-    }
-
-    componentDidMount() {
-        setTimeout(() => this.setState({
-            visible: true
-        }), 2000); // show toast after 2s
-
-        setTimeout(() => this.setState({
-            visible: false
-        }), 5000); // hide toast after 5s
-    };
-
-    render() {
-        return <Toast
-            visible={this.state.visible}
-            position={50}
-            shadow={false}
-            animation={false}
-            hideOnPress={true}
-        >This is a message</Toast>;
-    }
-}
-
-```
-
-### Run example:
-
-```
-cd ./Example
-npm install
-```
